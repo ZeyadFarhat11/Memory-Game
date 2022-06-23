@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Memory Game</title>
+</head>
+
+<body class="blur">
+    <header>
+        <div class="row">
+            <div>
+                name: <span id="name"></span>
+            </div>
+            <div>
+                wins: <span id="wins">0</span>
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                remaining: <span id="remaining">60</span><span>s</span>
+            </div>
+            <div>
+                wrong tries: <span id="wrong-tries">0</span>
+            </div>
+        </div>
+    </header>
+    <div class="content">
+        <div class="cards-holder">
+            <div class="card" data-id="8">
+                <div class="front face">
+                    <img src="imgs/cat-8.jpg">
+                </div>
+                <div class="back face">
+                    ?
+                </div>
+            </div>
+            <div class="card" data-id="9">
+                <div class="front face">
+                    <img src="imgs/cat-9.jpg">
+                </div>
+                <div class="back face">
+                    ?
+                </div>
+            </div>
+            <div class="card" data-id="10">
+                <div class="front face">
+                    <img src="imgs/cat-10.jpg">
+                </div>
+                <div class="back face">
+                    ?
+                </div>
+            </div>
+            <div class="card" data-id="11">
+                <div class="front face">
+                    <img src="imgs/cat-11.jpg">
+                </div>
+                <div class="back face">
+                    ?
+                </div>
+            </div>
+            <div class="card" data-id="12">
+                <div class="front face">
+                    <img src="imgs/cat-12.png">
+                </div>
+                <div class="back face">
+                    ?
+                </div>
+            </div>
+            <div class="card" data-id="13">
+                <div class="front face">
+                    <img src="imgs/cat-13.png">
+                </div>
+                <div class="back face">
+                    ?
+                </div>
+            </div>
+            <div class="card" data-id="14">
+                <div class="front face">
+                    <img src="imgs/cat-14.jpg">
+                </div>
+                <div class="back face">
+                    ?
+                </div>
+            </div>
+            <div class="card" data-id="15">
+                <div class="front face">
+                    <img src="imgs/cat-15.jpg">
+                </div>
+                <div class="back face">
+                    ?
+                </div>
+            </div>
+            <div class="card" data-id="8">
+                <div class="front face">
+                    <img src="imgs/cat-8.jpg">
+                </div>
+                <div class="back face">
+                    ?
+                </div>
+            </div>
+            <div class="card" data-id="9">
+                <div class="front face">
+                    <img src="imgs/cat-9.jpg">
+                </div>
+                <div class="back face">
+                    ?
+                </div>
+            </div>
+            <div class="card" data-id="10">
+                <div class="front face">
+                    <img src="imgs/cat-10.jpg">
+                </div>
+                <div class="back face">
+                    ?
+                </div>
+            </div>
+            <div class="card" data-id="11">
+                <div class="front face">
+                    <img src="imgs/cat-11.jpg">
+                </div>
+                <div class="back face">
+                    ?
+                </div>
+            </div>
+            <div class="card" data-id="12">
+                <div class="front face">
+                    <img src="imgs/cat-12.png">
+                </div>
+                <div class="back face">
+                    ?
+                </div>
+            </div>
+            <div class="card" data-id="13">
+                <div class="front face">
+                    <img src="imgs/cat-13.png">
+                </div>
+                <div class="back face">
+                    ?
+                </div>
+            </div>
+            <div class="card" data-id="14">
+                <div class="front face">
+                    <img src="imgs/cat-14.jpg">
+                </div>
+                <div class="back face">
+                    ?
+                </div>
+            </div>
+            <div class="card" data-id="15">
+                <div class="front face">
+                    <img src="imgs/cat-15.jpg">
+                </div>
+                <div class="back face">
+                    ?
+                </div>
+            </div>
+        </div>
+        <button id="start" type="button">Start</button>
+        <!-- <div class="leader-ship" style="display: none;">
+            <div class="head">
+                <span class="name">name</span>
+                <span class="wins">wins</span>
+                <span class="loses">loses</span>
+                <span class="playing-time">playing-time</span>
+            </div>
+            <div class="person">
+                <span>Zeyad</span>
+                <span>15</span>
+                <span>7</span>
+                <span>32 Minute</span>
+            </div>
+        </div> -->
+    </div>
+    <div class="sounds" style="display: none;">
+        <audio id="success-sound">
+            <source src="sounds/success.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="fail-sound">
+            <source src="sounds/fail.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="clock-sound">
+            <source src="sounds/clock.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
